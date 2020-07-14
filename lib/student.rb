@@ -77,7 +77,7 @@ class Student
     FROM students
     WHERE grade = 10
     LIMIT 1
-    SQL 
+    SQL
   end
 
 
