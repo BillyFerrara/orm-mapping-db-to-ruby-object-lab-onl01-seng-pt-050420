@@ -75,7 +75,7 @@ class Student
     sql = <<-SQL
     SELECT *
     FROM students
-    WHERE students.id = 0
+    WHERE grade = 10 
     LIMIT 1
     SQL
   end
