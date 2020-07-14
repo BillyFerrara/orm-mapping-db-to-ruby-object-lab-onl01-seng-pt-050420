@@ -34,7 +34,7 @@ class Student
       end.first
   end
 
-  def self.count_all_students_in_grade_9
+  def self.all_students_in_grade_9
     sql = <<-SQL
     SELECT *
     FROM students
@@ -42,7 +42,7 @@ class Student
     SQL
     DB[:conn].execute(sql).collect do |row|
       self.new_from_db(row)
-    end 
+    end
   end
 
   def save
